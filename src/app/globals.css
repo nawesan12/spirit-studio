@@ -2,26 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Tilt+Prism&family=Yeseva+One&display=swap');
+
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --white: #e5e5e5;
+  --bone: #E6E1CF;
+  --darky: #1F1F1F;
+  -webkit-tap-highlight-color: transparent;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  overflow-x: hidden;
+  background: var(--darky);
+  color: var(--white);
+}
+
+::-webkit-scrollbar {
+  width: .7rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000000;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+
+.font-prism {
+  font-family: "Tilt Prism", sans-serif;
+}
+
+.font-fatface {
+  font-family: "Abril Fatface", sans-serif;
+}
+
+.font-yeseva {
+  font-family: "Yeseva One", sans-serif;
 }
